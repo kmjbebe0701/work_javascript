@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	
+	<script>
+		
+		
+		
+		var a = new Array(1, 2, 3, 4, 5);
+		console.log(a);
+		
+		var b = new Array();
+		for (var i = 0; i < a.length; i++) {
+			var item = a.pop();
+			b[i] = item;
+			a.unshift(item);
+			
+		}
+		console.log(b);
+		
+		var c = new Array();
+		for (var i = 0; i < a.length; i++) {
+			var item = a.shift();
+			c[i] = item;
+			a.push(item);
+			
+		}
+		console.log(c);
+		
+		
+		
+	</script>
+</body>
+</html>
