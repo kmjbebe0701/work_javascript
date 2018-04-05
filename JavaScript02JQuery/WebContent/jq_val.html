@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Insert title here</title>
+	
+
+</head>
+<body>
+	<div>이름: <input type="text" id="target" value=""></div>
+	<button id="text">val()</button>
+		
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		
+		$(document).ready(function() {
+			$("button").click(function() {
+				//target id 값을 가지는 앨리먼트의 텍스트만 가져오는 방법
+				alert($("#target").val());
+			});
+			
+			
+		});
+		
+	</script>
+</body>
+</html>
