@@ -4,30 +4,29 @@
 	<meta charset="utf-8">
 	<title>Insert title here</title>
 	<style>
-		.box {
-			width: 50px;
-			height: 20px;
-			background-color: green;
-			position:absolute;
-			border: 1px solid black;
-			
+		#p1 {
+			font-size: x-large;
+			color: blue;
 		}
 	</style>
 
 </head>
 <body>
 	
+	<form>
+	<input type="text" id="text1" value="">
+	</form>
+	<p id="p1">여기에 글자가 표기됩니다.</p>
 	
-
-	<button>Run</button>
-	<div class="box">Hello!!</div>
 		
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script>
 		$(document).ready(function() {
-			$("button").click(function() {
-				$("div").animate({ zoom: '+=550%'});
+			$("#text1").keyup(function() {
+				var a = $("#text1").val();
+				$("#p1").text(a);
 			});
+			
 			
 		});
 		
