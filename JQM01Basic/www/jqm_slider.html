@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1,
+		minimum-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+	<title>Page Title</title>
+</head>
+<body>
+	
+	<div data-role = "page">
+		<div data-role = "header">
+			<h1>My Title</h1>
+		</div>
+		<!-- /header -->
+		<div data-role = "content">
+			<p>안녕하세요? JQuery에 오늘 입문하였습니다</p>
+			<form>
+				<label for="slider-0">Input slider:</label>
+				<input type="range" name="slider" id="slider-0" value="25" min="0" max="100">
+				
+				<!-- 다른 아이콘 참조 : http://demos.jquerymobile.com/1.4.5/icons/ -->
+				<a href="#" data-role="button" data-icon="star">Star button</a>
+				<a id="vbutton" data-role="button">눌러보세요</a>
+			</form>
+			
+		</div>
+		<!-- /content -->
+		<div data-role = "footer">
+			<h4>Thank you!</h4>
+		</div>
+		<!-- /footer -->
+	</div>
+	<!-- /page -->
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#vbutton").click(function() {
+				alert("버튼이 클릭 되었습니다");
+			});
+		});
+	</script>
+</body>
+</html>
